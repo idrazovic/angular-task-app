@@ -5,3 +5,5 @@ export interface Task {
     summary: string;
     dueDate: string;
 }
+
+export type NewTaskData = Omit<Task, 'id' | 'userId'>
